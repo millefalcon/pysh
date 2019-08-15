@@ -11,7 +11,7 @@ import sys
 import traceback
 from codeop import CommandCompiler, compile_command
 
-from pysh.bin.utils import run_cmd
+from .bin.utils import run_cmd
 
 __all__ = ["InteractiveInterpreter", "InteractiveConsole", "interact",
            "compile_command"]
