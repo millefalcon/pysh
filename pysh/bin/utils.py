@@ -24,7 +24,7 @@ def helpall(*args, **kwargs):
 
 @register
 def ls(*args, **kwargs):
-    print('ls args', args)
+    #print('ls args', args)
     if not any(args):
         return os.listdir('.')
     contents = []
