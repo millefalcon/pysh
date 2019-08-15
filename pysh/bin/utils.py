@@ -9,11 +9,10 @@ def register(func):
 
 
 def run_cmd(source, filename, symbol):
-    print(source, filename, symbol)
+    #print(source, filename, symbol)
     cmd, _, args = source.partition(' ')
     if cmd in _commands:
         func = _commands[cmd]
-        print('args', args)
         return func(*args.split())
     return None
 
